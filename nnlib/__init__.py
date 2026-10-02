@@ -11,7 +11,7 @@ from .SigmoidFunction import SigmoidFunction
 from .RectifiedLinearUnit import RectifiedLinearUnit
 from .Tanh import Tanh
 # TODO: add these once their classes are implemented
-# from .BinaryCrossEntropyLoss import BinaryCrossEntropyLoss
+from .BinaryCrossEntropyLoss import BinaryCrossEntropyLoss
 # from .Sequential import Sequential
 
 __all__ = [
@@ -20,4 +20,5 @@ __all__ = [
     "SigmoidFunction",
     "RectifiedLinearUnit",
     "Tanh",
+    "BinaryCrossEntropyLoss",
 ]
