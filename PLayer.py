@@ -1,4 +1,4 @@
-class Layer:
+class PLayer:
     """
     Base class for all layers in the neural network.
 

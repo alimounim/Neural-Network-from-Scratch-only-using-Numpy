@@ -1,7 +1,7 @@
 import numpy as np
-from PLayer import Layer
+from PLayer import PLayer
 
-class LinearLayer(Layer):
+class LinearLayer(PLayer):
     """
     A linear layer is a fully connected layer; every input feature is connected to every output neuron with its own weight,
     and each output neuron adds a bias. It stores two things: the weights and the bias. The weights are stored in a 2D
