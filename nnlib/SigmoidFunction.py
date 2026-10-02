@@ -1,5 +1,5 @@
 import numpy as np
-from PLayer import PLayer
+from .PLayer import PLayer
 
 class SigmoidFunction(PLayer):
     """
