@@ -56,3 +56,20 @@ class LinearLayer(PLayer):
         self.db = np.sum(grad, axis=0)  # Gradient of bias
         return np.dot(grad, self.W.T)  # Gradient of input
 
+    def params(self):
+        """
+        Return the weights and bias of the layer together with their gradients.
+
+        The arrays are returned by reference (not copied), so updating them in place
+        (e.g. p -= lr * g) changes the layer's own W and b.
+
+        Returns:
+            list[tuple[np.ndarray, np.ndarray]]: [(W, dW), (b, db)], where W has shape
+                                                 (in_features, out_features) and b has
+                                                 shape (out_features,)
+        """
+        return [(self.W, self.dW), (self.b, self.db)]
+    
+
+
+

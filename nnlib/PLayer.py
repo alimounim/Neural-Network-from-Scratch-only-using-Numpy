@@ -39,4 +39,20 @@ class PLayer:
 
         raise NotImplementedError("Backward method not implemented in base Layer class.")
 
-    
+    def params(self):
+        """
+        Return the learnable parameters of the layer together with their gradients.
+
+        By default a layer has no learnable parameters (e.g. activation functions),
+        so this returns an empty list. Layers with weights (e.g. LinearLayer) override
+        it. Sequential uses this to update, save and load every parameter in the
+        network without knowing the specific type of each layer.
+
+        Returns:
+            list[tuple[np.ndarray, np.ndarray]]: list of (parameter, gradient) pairs;
+                                                 empty for layers without parameters
+        """
+        return []
+
+
+

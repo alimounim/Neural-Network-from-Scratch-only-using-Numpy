@@ -10,9 +10,8 @@ from .LinearLayer import LinearLayer
 from .SigmoidFunction import SigmoidFunction
 from .RectifiedLinearUnit import RectifiedLinearUnit
 from .Tanh import Tanh
-# TODO: add these once their classes are implemented
 from .BinaryCrossEntropyLoss import BinaryCrossEntropyLoss
-# from .Sequential import Sequential
+from .Sequential import Sequential
 
 __all__ = [
     "PLayer",
@@ -21,4 +20,5 @@ __all__ = [
     "RectifiedLinearUnit",
     "Tanh",
     "BinaryCrossEntropyLoss",
+    "Sequential",
 ]
