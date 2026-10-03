@@ -11,6 +11,7 @@ from .SigmoidFunction import SigmoidFunction
 from .RectifiedLinearUnit import RectifiedLinearUnit
 from .Tanh import Tanh
 from .BinaryCrossEntropyLoss import BinaryCrossEntropyLoss
+from .MeanSquaredErrorLoss import MeanSquaredErrorLoss
 from .Sequential import Sequential
 
 __all__ = [
@@ -20,5 +21,6 @@ __all__ = [
     "RectifiedLinearUnit",
     "Tanh",
     "BinaryCrossEntropyLoss",
+    "MeanSquaredErrorLoss",
     "Sequential",
 ]
